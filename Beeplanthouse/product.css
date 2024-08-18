@@ -1,0 +1,254 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: repeating-linear-gradient(
+        90deg, /* Vertical stripes */
+        #ffeb3b, /* Yellow */
+        #ffeb3b 20px, /* Stripe width */
+        #000 20px, /* Black */
+        #000 40px /* Stripe width */
+    );
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    color: #ffeb3b; /* Yellow text */
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #ffeb3b; /* Yellow links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 1rem;
+    color: #ffeb3b; /* Yellow text */
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.search-form input[type="text"] {
+    padding: 0.5rem;
+    border: 2px solid #333;
+    border-radius: 0.25rem 0 0 0.25rem;
+    width: 200px;
+}
+
+.search-form button {
+    padding: 0.5rem;
+    border: 2px solid #333;
+    border-left: none;
+    background-color: #ffeb3b;
+    color: #000;
+    border-radius: 0 0.25rem 0.25rem 0;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #fdd835; /* Slightly darker yellow on hover */
+}
+
+main {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.intro h2 {
+    color: #333;
+}
+
+.intro p {
+    margin: 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ffeb3b; /* Yellow button */
+    color: #000; /* Black text */
+    text-decoration: none;
+    border-radius: 0.25rem;
+}
+
+.btn:hover {
+    background-color: #fdd835; /* Slightly darker yellow on hover */
+}
+
+.featured-plants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.plant-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+}
+
+.plant-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.plant-item h3 {
+    margin: 0.5rem 0;
+}
+
+.product-category {
+    margin: 2rem 0;
+}
+
+.product-category h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.product-item img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+
+.product-info {
+    flex-grow: 1;
+}
+
+.product-info h3 {
+    margin: 0 0 0.5rem;
+    color: #333;
+}
+
+.product-info p {
+    margin: 0.5rem 0;
+}
+
+.product-info .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ffeb3b; /* Yellow button */
+    color: #000; /* Black text */
+    text-decoration: none;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+}
+
+.product-info .btn:hover {
+    background-color: #fdd835; /* Slightly darker yellow on hover */
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    color: #ffeb3b; /* Yellow text */
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: #ffeb3b; /* Yellow links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.contact-location {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.contact-info h3, .map h3 {
+    margin-bottom: 1rem;
+}
+
+.contact-info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .featured-plants, .product-category {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item img {
+        margin: 0 0 1rem;
+    }
+
+    .product-category {
+        padding: 0 1rem;
+    }
+}

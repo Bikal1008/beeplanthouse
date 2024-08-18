@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Plant House - Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script defer src="login.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="BeePlantHouse.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="BeePlantHouse.html#Contacts">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <h1>Login to Bee Plant House</h1>
+    </header>
+    
+    <main>
+        <section class="login-form">
+            <h2>Login</h2>
+            <form action="authenticate.php" method="post">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bee Plant House. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
